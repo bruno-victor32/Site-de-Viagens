@@ -11,10 +11,6 @@ body {
     width: 100vw;
 }
 
-h1 {
-    font-size: 4rem;
-}
-
 button {
     padding: 10px 15px;/*top/bottom left/right*/
     border-radius: 8px;
@@ -24,30 +20,29 @@ button {
     color: white;
 }
 
-ul {
-    list-style: none;
-    display: flex;
-    /*flex-direction: row; Deixando em linha */
+header {
+    height: calc(100vh - 150px);
+    background: no-repeat center/cover  url('assets/header-image.jpg');
 }
 
-li {
-    margin:0 15px; /*top/bottom left/right*/
-}
-
-nav {
+header nav {
     display: flex;
     justify-content: space-between;
     margin: auto 30px;
 }
 
-nav p {
+header nav p {
     font-weight: bold;
 }
 
-header {
-    height: calc(100vh - 150px);
-    background: no-repeat center/100%  url('assets/header-image.jpg');
+header nav ul {
+    list-style: none;
+    display: flex;
+    /*flex-direction: row; Deixando em linha */
+}
 
+header nav ul li {
+    margin: 0 15px; /*top/bottom left/right*/
 }
 
 .header-content {
@@ -58,4 +53,49 @@ header {
 
 .header-content h1 {
     margin-bottom:10px ;
+    font-size: 4rem;
 }
+
+/* Responsividade */
+
+/* Landscape phone to portrait tablet*
+@media (max-width: 767px) { ... }/ 
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+    body {
+        height: calc(100vh - 55px);
+    }
+
+    header nav ul {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        background: #1D61DD;
+        color: white;
+        font-weight: bold;
+        height: 55px;
+
+        display: flex;
+        justify-content: space-between;/*Centralizando o conteudo na horizontal*/
+        align-items: center;/*Centralizando o conteudo na vertical*/
+    }
+
+    header nav p {
+        width: 100%;
+        text-align: center;
+    }
+ }
+
+/* Landscape phone to portrait tablet 
+@media (max-width: 767px) { ... }
+
+Portrait tablet to landscape and desktop 
+@media (min-width: 768px) and (max-width: 979px) { ... }
+
+ Large desktop 
+@media (min-width: 1200px) { ... } */
