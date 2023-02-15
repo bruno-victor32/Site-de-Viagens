@@ -53,32 +53,36 @@ header nav ul li {
 }
 
 .header-content h1 {
-    margin-bottom:10px ;
+    margin-bottom: 10px;
     font-size: 4rem;
 }
 
 .pacotes {
-    background: #E5E5E5;
+    background: #e1e8f7;
     /*height: 500px;*/
     padding: 15px;
 }
 
 .pacotes .pacotes-cards {
     display: flex;
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;/*Conforme a tela vai diminuindo ela vai quebrar para a linha de baixo*/
+    justify-content: center;
 }
 
 .pacotes .pacotes-title {
     width: 100%; /*Para o h1 ocupar toda a largura da página*/
     text-align: center;
-    margin: 0;
+    margin: 25px 0;
 }
 
 .pacotes .card {
     width: 250px; /*Largura*/
     height: 350px; /*Altura*/
-    border-radius: 24px 0px;
     background: white;
-    margin: 25px auto;/*Centralizando o card*/
+    border-radius: 24px 0px;
+    margin: 25px 25px;/*Centralizando o card*/
     position: relative; 
 }
 
@@ -86,7 +90,7 @@ header nav ul li {
     width: 250px;
     height: 200px;
     border-radius: 24px 0 0 0;
-
+    object-fit: cover;
 }
 
 .pacotes .card-content {
@@ -146,13 +150,13 @@ header nav ul li {
 
 /* Responsividade */
 
-/* Landscape phone to portrait tablet*/ 
-@media (max-width: 767px) { ... }
+/* Landscape phone to portrait tablet/ 
+@media (max-width: 767px) { ... }*
 
 /* Landscape phones and down */
 @media (max-width: 480px) { 
     body {
-        height: calc(100vh - 55px);
+        margin-bottom: 55px;
     }
 
     header nav ul {
@@ -162,6 +166,8 @@ header nav ul li {
         width: 100%;
         padding: 0;
         margin: 0;
+
+        z-index: 99; /*Quanto maior esse conteudo, significa que o conteudo e mais relevante*/
 
         background: #1D61DD;
         color: white;
