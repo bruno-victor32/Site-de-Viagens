@@ -148,6 +148,65 @@ header nav ul li {
     font-weight: bold;
 }
 
+.servicos {
+    padding: 15px;
+}
+
+.servicos .servicos-title {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.servicos .servicos-cards {
+    padding-top: 25px;
+    display: flex;
+    max-width: 950px;
+    justify-content: center;
+    margin: auto;/*Para centralizar*/
+    flex-wrap: wrap;
+
+}
+
+.servicos .card {
+    width: 250px;
+    display: flex;
+    flex-direction: column; /*Deixando o flex direto em coluna, por padrão ele vem em linha*/
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.servicos .card svg {
+    width: 60px;
+    height: 60px;
+    margin: 50px 0;
+    transition: all 1s;/*Quando passar o mouse tera uma transição de cor progressivamente*/
+}
+
+.servicos .card svg:hover {
+    stroke: #1D61DD;/*Mudando a cor do simbolo*/
+    transform: scale(1.1);/*Aumentando o tamanho do simbolo*/
+}
+
+.servicos .card h3 {
+    font-weight: bold;
+}
+
+.servicos .card p {
+    color: grey;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.servicos .card .card-content {
+    height: 180px;/*Essa configuração permite deixar todos os textos do mesmo tamanho mesmo que tenha um texto maior que o outro*/
+    text-align: center;
+}
+
+.servicos button {
+    background: #1D61DD;
+}
+
 /* Responsividade */
 
 /* Landscape phone to portrait tablet/ 
