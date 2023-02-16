@@ -207,6 +207,11 @@ header nav ul li {
     background: #1D61DD;
 }
 
+#map {
+    width: 100%;
+    height: 100%;
+}
+
 /* Responsividade */
 
 /* Landscape phone to portrait tablet/ 
