@@ -15,12 +15,17 @@ ul {
     list-style: none;/*Todos os ul não terão estilo*/
 }
 
+a {
+    text-decoration: none;/*Retirando o underline dos links*/
+    color: inherit;
+}
+
 button {
     padding: 10px 15px;/*top/bottom left/right*/
     border-radius: 8px;
     font-weight: bold;
     border: 0;
-    background: #762A2E;
+    background: #1D61DD;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }

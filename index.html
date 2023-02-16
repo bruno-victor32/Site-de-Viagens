@@ -15,21 +15,21 @@
             <!--<img src="" alt="Logo Bruno Viagens">-->
             <p>Bruno Viagens</p>
             <ul>
-                <li>Home</li>
-                <li>Pacotes</li>
-                <li>Serviços</li>
-                <li>Contato</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#pacotes">Pacotes</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
 
-        <div class="header-content">
+        <div id="home" class="header-content">
             <h1>Monte Fuji</h1>
             <p>Conheça o monte fuji, veja as belezas desse lugar! O embarque está próximo, junte-se a nós nessa experiência</p>
             <button>Saiba mais</button>
         </div>
     </header>
 
-    <section class="pacotes">
+    <section id="pacotes" class="pacotes">
         <h1 class="pacotes-title">Conheça nossos pacotes</h1>
         <div class="pacotes-cards">
             <div class="card">
@@ -87,7 +87,7 @@
         </div>
     </section>
 
-    <section class="servicos">
+    <section id="servicos" class="servicos">
         <h1 class="servicos-title">Serviços</h1>
         <div class="servicos-cards">
             <div class="card">
@@ -128,7 +128,7 @@
         </div>
     </section>
 
-    <section class="contato">
+    <section id="contato" class="contato">
         <div class="contato-card">
             <h1>Entre em contato</h1>
             <ul>
@@ -150,6 +150,17 @@
 
     <script>
         feather.replace();
+    
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e){
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    
     </script>
 
 
