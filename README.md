@@ -13,9 +13,9 @@ Coisas legais que conseguir aprender com este projeto:
 
  ## Comportamento Móvel
 
-![enter image description here](https://github.com/isadorastan/site-viagem/blob/master/assets/gif-mobile.gif?raw=true)
+![enter image description here](https://github.com/bruno-victor32/Site-de-Viagens/blob/main/Mobile.gif?raw=true)
 
 ## Comportamento Desktop 
 
-![enter image description here](https://github.com/isadorastan/site-viagem/blob/master/assets/gif-desktop.gif?raw=true)
+![enter image description here](https://github.com/bruno-victor32/Site-de-Viagens/blob/main/Desktop.gif?raw=true)
  
